@@ -1,14 +1,10 @@
-import DISHES from '../data/dishes'
+import {combineReducers} from 'redux'
+import dishReducer from './dishReducer'
+import contactReducer from './contactReducer'
 
-
-const initState = {
-    dishes: DISHES,
-
-}
-
-
-const rootReducer = (state = initState,  action) => {
-    return state
-}
+const rootReducer = combineReducers({
+    dishes: dishReducer,
+    contacts: contactReducer
+})
 
 export default rootReducer

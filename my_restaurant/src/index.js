@@ -5,10 +5,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {Provider} from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import rootReducer from './reducers/rootReducer';
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
 
-const store = createStore(rootReducer)
+
+const store = createStore(rootReducer, applyMiddleware(logger, thunk))
 
 
 ReactDOM.render(

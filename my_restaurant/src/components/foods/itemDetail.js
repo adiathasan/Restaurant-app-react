@@ -6,23 +6,28 @@ import { Redirect } from 'react-router-dom';
 
 function ItemDetail(props) {
     const {dish} = props
+    document.title = dish.name
     const comments = dish && dish.comments.map(comment => {
         return (
-            <div className=' py-4 border-bottom border-info' key={comment.id}>
-                <p>rating: {comment.rating}</p>
-                <p>comment: {comment.comment}</p>
-                <p>author: {comment.author}</p>
+            <div className=' py-4 pl-2 border-bottom shadow-sm border-info' key={comment.id}>
+                <p>rating: <span className=' text-info'>{comment.rating}</span></p>
+                <p><span className='text-danger'>comment </span>: {comment.comment}</p>
+                <p>author: <span className=' text-info'>
+                                {comment.author}
+                            </span>
+                </p>
+
                 <p>date: {moment(comment.date).calendar()}</p>
             </div>
         )
     })
     return dish ? (
-        <div className="container-fluid">
+        <div className="container-fluid" id={'#'+ dish.id}>
             <div className="row">
                 <div className='col-12 m-auto'>
                     <Card className=' container shadow-sm my-4'>
                         <CardBody className='row'>
-                            <div className="col-5">
+                            <div className="col-md-5 col-12">
                                 <CardImg src={dish.image} />
                                 <CardImgOverlay>
                                     <CardTitle className='text-light'>
@@ -30,26 +35,27 @@ function ItemDetail(props) {
                                     </CardTitle>
                                 </CardImgOverlay>
                             </div>
-                           <div className="col-7 border-left ">
+                            <div className="col-md-7 col-12 mt-2 shadow-sm  mt-md-0 border-left-md border-secondary ">
+                                <p>Category: {dish.category}</p>
                                 <p>name: {dish.name}</p>
                                 <p>type: {dish.label}</p>
                                 <p>price: $ {dish.price}</p>
                            </div>
-                           <div className="col-12 mt-4 border-top pt-4">
+                           <div className="col-12 mt-4 border-top border-info pt-4">
                                 <p>{dish.description}</p>
                            </div>
                         </CardBody>
                     </Card>
                 </div>
             </div>
-            <div className="row">
+            <div className="row  mb-5 ">
                 <div className='col-12 m-auto'>
                     <Card className=' container shadow-sm my-4'>
                         <CardBody className='row'>
-                            <div className="col-2 py-4 bg-info">
-                                <h4 className='text-light'>Ratings:</h4>
+                            <div className="col-2 ml-auto py-4 bg-info">
+                                <h4 className='text-light px-2 '></h4>
                             </div>
-                            <div className="col-9 mr-auto">
+                            <div className="col-10 mr-auto">
                                 {
                                     comments && comments
                                 }
@@ -66,7 +72,7 @@ function ItemDetail(props) {
 const mapStateToProps = (state, ownProps) =>{
     
     const id = ownProps.match.params.id
-    const {dishes} = state
+    const {dishes} = state.dishes
     const dish = dishes.filter(dish =>{
         return dish.id == id
     })
