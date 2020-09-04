@@ -9,6 +9,9 @@ class Contact extends Component {
         message:'',
         phone:'',
     }
+
+    message = ''
+
     handleChange = e =>{
         this.setState({
             [e.target.id]: e.target.value
@@ -18,15 +21,23 @@ class Contact extends Component {
     handleSubmit = e =>{
         e.preventDefault()
         this.props.contactFunc(this.state)
-        this.message = (
-            <div className="alert text-center alert-success">
-                <p>Thank you for contacting us</p>
-            </div>
-        )
+        e.target.reset()
+        this.setState({
+            ...this.state,
+            message: (
+                <div className="alert text-center alert-success">
+                    <p>Thank you for contacting us</p>
+                </div>
+            )
+        })
         setTimeout(()=>{
-            this.props.history.push('/')
+            this.setState({
+                ...this.state,
+                message: ''
+            })
         }, 3000)
-    }
+        } 
+        
 
     render() {
         document.title = 'Contact'
@@ -37,7 +48,7 @@ class Contact extends Component {
                     <div className="row">
                         <div className="col-11  bg-info col-md-8 mx-auto p-3 text-light rounded shadow">
                             {
-                                this.message && this.message
+                                this.state.message && this.state.message
                             }
                             <form className='p-4 ' onSubmit={this.handleSubmit}>
                                 <div className="form-group">
@@ -76,7 +87,7 @@ const mapDispatchToProps = dispatch =>{
 const mapStateToProps = state => {
 
     return {
-        contact: state.contacts
+        contactMsg: state.contacts.message
     }
 }
 

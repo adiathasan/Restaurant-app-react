@@ -6,23 +6,26 @@ import Loading from '../loader/loading';
 
 
 
-const Menu = (props) => {
-    const { dishes } = props
-    document.title = 'Menu'
-
-    const mapDishToUi = dishes && dishes.map(dish => {
-    return <Items dish={dish} key={dish.id} />
-    })
-
-    return mapDishToUi ? (
-        <div className='container mb-5 pt-4'>
-            <div className="row">
-                {
-                    mapDishToUi && mapDishToUi
-                }
+class Menu extends Component {
+    componentDidMount(){
+        this.props.fetchDishesFunc()
+    }
+    render(){
+        const dishes = this.props.dishes
+        const UiMenu = dishes.map(dish => {
+            return <Items dish={dish} key={dish.id} />
+        })
+        document.title = 'Menu'
+        return !this.props.isLoading ? (
+            <div className='container mb-5 pt-4'>
+                <div className="row">
+                    {
+                        UiMenu
+                    }
+                </div>
             </div>
-        </div>
-    ) : <Loading/>
+        ) : <Loading/>
+    }
 }
     
 

@@ -1,0 +1,407 @@
+{
+  "DISHES": [
+    {
+      "id": 0,
+      "name": "Ginger Burger",
+      "image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/low-carb-diet-meal-plan-and-menu-1296x728-feature.jpg?h=1528",
+      "category": "meal",
+      "label": "Hot",
+      "price": "199",
+      "description": "This chicken burger gets an Asian-flavor twist with ginger and garlic. It's topped off with a fabulous coleslaw. If you like, serve the coleslaw as a s'ide for grilled items, like chicken breasts, fish fillets or chops",
+      "comments": [
+        {
+          "id": 0,
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "Shanto",
+          "date": "2018-10-16T17:57:28.556094Z"
+        },
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Karim",
+          "date": "2017-09-05T17:57:28.556094Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Moinul",
+          "date": "2019-02-13T17:57:28.556094Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Rahat",
+          "date": "2017-12-02T17:57:28.556094Z"
+        },
+        {
+          "id": 4,
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "Rony",
+          "date": "2019-12-02T17:57:28.556094Z"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "BBQ Chicken Pizza",
+      "image": "https://ireteam.com/wp-content/uploads/2014/01/Healthy-food-Front-Street-Cafe_2.jpg",
+      "category": "meal",
+      "label": "cheesy",
+      "price": "599",
+      "description": "BBQ chicken pizza with tangy BBQ sauce, chicken, and red onion. Gouda cheese gives the homemade pizza the most delicious smoky flavor and cilantro adds a touch of freshness. My pizza dough recipe makes enough for two 12-inch pizzas, so you can freeze half for later. It’s an easy thick-style pizza crust with unbeatable flavor.",
+      "comments": [
+        {
+          "id": 0,
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "Shanto",
+          "date": "2018-10-16T17:57:28.556094Z"
+        },
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Karim",
+          "date": "2017-09-05T17:57:28.556094Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Moinul",
+          "date": "2019-02-13T17:57:28.556094Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Rahat",
+          "date": "2017-12-02T17:57:28.556094Z"
+        },
+        {
+          "id": 4,
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "Rony",
+          "date": "2019-12-02T17:57:28.556094Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "French Fries",
+      "image": "https://i.ndtvimg.com/i/2017-11/pizza_620x350_71511520342.jpg",
+      "category": "appetizer",
+      "label": "New",
+      "price": "120",
+      "description": "These are deep-fried, very thin, salted slices of potato that are usually served at room temperature. French fries have numerous variants, from thick-cut to shoestring, crinkle, curly and many other name's.",
+      "comments": [
+        {
+          "id": 0,
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "Shanto",
+          "date": "2018-10-16T17:57:28.556094Z"
+        },
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Karim",
+          "date": "2017-09-05T17:57:28.556094Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Moinul",
+          "date": "2019-02-13T17:57:28.556094Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Rahat",
+          "date": "2017-12-02T17:57:28.556094Z"
+        },
+        {
+          "id": 4,
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "Rony",
+          "date": "2019-12-02T17:57:28.556094Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cheese Cake",
+      "image": "https://restaurantengine.com/wp-content/uploads/2016/06/How-To-Determine-Food-Costs-For-A-New-Menu-660x447.jpg",
+      "category": "dessert",
+      "label": "",
+      "price": "170",
+      "description": "A delectable, semi-sweet New York Style Cheese Cake, with cracker crust and spiced with Indian cardamoms",
+      "comments": [
+        {
+          "id": 0,
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "Shanto",
+          "date": "2018-10-16T17:57:28.556094Z"
+        },
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Karim",
+          "date": "2017-09-05T17:57:28.556094Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Moinul",
+          "date": "2019-02-13T17:57:28.556094Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Rahat",
+          "date": "2017-12-02T17:57:28.556094Z"
+        },
+        {
+          "id": 4,
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "Rony",
+          "date": "2019-12-02T17:57:28.556094Z"
+        }
+      ]
+    }
+  ],
+  "contactUs": [
+    {
+      "id": 1,
+      "name": "adiat",
+      "email": " 'a@gmail.com'",
+      "message": "shiromoni",
+      "phone": "01729143339"
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "qwqwq",
+      "phone": "01729143339",
+      "id": 2
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "sada",
+      "phone": "01729143339",
+      "id": 3
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "www",
+      "phone": "01729143339",
+      "id": 4
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "sss",
+      "phone": "01729143339",
+      "id": 5
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "12123",
+      "phone": "0172345678",
+      "id": 6
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "qwqw",
+      "phone": "0172914sfghj",
+      "id": 7
+    },
+    {
+      "name": "customer ratul",
+      "email": "rakin@gmail.com",
+      "message": "wwwwwwwwww",
+      "phone": "01729143339",
+      "id": 8
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "wqwq",
+      "phone": "01729143339",
+      "id": 9
+    },
+    {
+      "name": "iphone11",
+      "email": "adiathasan.me@gmail.com",
+      "message": "asda",
+      "phone": "sads",
+      "id": 10
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "asdfd",
+      "phone": "rfg",
+      "id": 11
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "qwsa",
+      "phone": "s1q3",
+      "id": 12
+    },
+    {
+      "name": "customer ratul",
+      "email": "adiathasan.me@gmail.com",
+      "message": "1212",
+      "phone": "213123",
+      "id": 13
+    },
+    {
+      "name": "Adiat Hasan",
+      "email": "adiathasan.me@gmail.com",
+      "message": "tatata",
+      "phone": "+8801729143339",
+      "id": 14
+    },
+    {
+      "name": "customer ratul",
+      "email": "adi@Asakn.com",
+      "message": "ww",
+      "phone": "0172345678",
+      "id": 15
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "21213",
+      "phone": "017",
+      "id": 16
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "asdas",
+      "phone": "017",
+      "id": 17
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "wwwwwwwwww",
+      "phone": "01729143339",
+      "id": 18
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "i d k",
+      "phone": "01729143339",
+      "id": 19
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "www",
+      "phone": "0172345678",
+      "id": 20
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "wwww",
+      "phone": "01729143339",
+      "id": 21
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "adssd",
+      "phone": "01729143339",
+      "id": 22
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "qqq",
+      "phone": "01729143339",
+      "id": 23
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "s",
+      "phone": "s",
+      "id": 24
+    },
+    {
+      "name": "Adiat",
+      "email": "adi@Asakn.com",
+      "message": "12",
+      "phone": "12312321",
+      "id": 25
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "1`233",
+      "phone": "01729143339",
+      "id": 26
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "weqa",
+      "phone": "qweqe",
+      "id": 27
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "w",
+      "phone": "017",
+      "id": 28
+    },
+    {
+      "name": "customer ratul",
+      "email": "adiathasan.me@gmail.com",
+      "message": "qwerwr",
+      "phone": "awerwer",
+      "id": 29
+    },
+    {
+      "name": "Adiat",
+      "email": "adiathasan.me@gmail.com",
+      "message": "waa",
+      "phone": "017",
+      "id": 30
+    },
+    {
+      "name": "customer ratul",
+      "email": "adiathasan.me@gmail.com",
+      "message": "ww",
+      "phone": "01729143339",
+      "id": 31
+    }
+  ]
+}

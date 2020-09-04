@@ -1,9 +1,9 @@
-import { DISH_LOADING, DISH_LOADED } from '../actionTypes/actionTypes'
+import { DISH_LOADING, DISH_LOADED } from '../varTypes/actionTypes'
 import DISHES from '../data/dishes'
 
 const initState = {
     isLoading: false,
-    dishes: DISHES
+    dishes: []
 }
 
 
@@ -12,16 +12,13 @@ function dishReducer(state = initState, action) {
         case DISH_LOADING:
             return {
                 ...state,
-                isLoading: false,
+                isLoading: true,
             }
         case DISH_LOADED:
             return {
                 ...state,
-                isLoading: true,
-                dishes: [
-                    ...state.dishes,
-                    action.dishes
-                ]
+                isLoading: false,
+                dishes: action.dishes
             }
         default:
             return state

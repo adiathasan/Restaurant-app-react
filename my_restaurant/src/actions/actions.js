@@ -1,24 +1,22 @@
-import * as aType from '../actionTypes/actionTypes'
-import DISHES from '../data/dishes'
-
+import * as aType from '../varTypes/actionTypes'
+import axios from 'axios'
+import { BASE_URL } from '../varTypes/base_url'
 
 // contact form submit action starts
 
 export default function contactAction(contact) {
-    return {
-        type: aType.CONTACT_ADDED,
-        contact
+    return dispatch =>{
+        axios.post((BASE_URL+'contactUs'), contact)
+        .then(resp => resp.status)
+        .then(status => {
+            return dispatch({type: aType.CONTACT_ADDED, msg: true})})
+        .catch(err => dispatch({
+            type: 'ERROR_CONTACT', err: false
+        }))
     }
 }
 
 // contact form submit action ends
-
-const loadingDishes = (dishes)=>{
-    return {
-        type: aType.DISH_LOADING,
-        dishes
-    }
-}
 
 const dishesLoaded = dishes =>{
     return {
@@ -27,11 +25,18 @@ const dishesLoaded = dishes =>{
     }
 }
 
+const dishesLoading = () =>{
+    return {
+        type: aType.DISH_LOADING,
+        dishes: []
+    }
+}
+
 export  function fetchDishesAction() {
     return dispatch =>{
-        dispatch(loadingDishes(DISHES))
-        setTimeout(()=>{
-            dispatch(dishesLoaded(DISHES))
-        }, 2000)
+        dispatch(dishesLoading())
+        axios(BASE_URL+'DISHES')
+        .then(res => res.data)
+        .then(data => dispatch(dishesLoaded(data)))
     }
 }

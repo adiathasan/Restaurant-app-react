@@ -6,7 +6,7 @@ import Loading from '../loader/loading';
 function Items({dish}) {
     
     const url = '/menu/' +dish.id
-    return dish ? (
+    return dish && (
         <div className="col-md-6 col-12 m-auto">
             <Link to={url} >
                 <Card className=' shadow-sm cursor my-2 my-md-4'>
@@ -22,9 +22,7 @@ function Items({dish}) {
             </Link>
             
         </div>
-    ) : <div className="col-8 p-5 text-center mx-auto my-5">
-            <Loading />
-        </div>
+    ) 
 }
 
 export default Items

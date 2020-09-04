@@ -1,9 +1,7 @@
 import * as aType from '../actionTypes/actionTypes'
 
 const initState = {
-    contacts: [
-        { name: 'adiat', email: 'a@gmail.com', message: 'shiromoni', phone: '01729143339' }
-    ]
+    message: ''
 
 }
 
@@ -12,11 +10,13 @@ function contactReducer(state = initState, action) {
         case aType.CONTACT_ADDED:
             state = {
                 ...state,
-                contacts: [
-                    ...state.contacts,
-                    action.contact
-
-                ]
+                message: action.msg
+            }
+            return state
+        case 'ERROR_CONTACT':
+            state = {
+                ...state,
+                message: action.err
             }
             return state
         default:

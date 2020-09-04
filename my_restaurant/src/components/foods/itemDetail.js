@@ -3,10 +3,11 @@ import { connect } from 'react-redux'
 import { Card, CardImg, CardBody, CardImgOverlay, CardTitle } from 'reactstrap';
 import moment from 'moment'
 import { Redirect } from 'react-router-dom';
+import Loading from '../loader/loading';
 
 function ItemDetail(props) {
-    const {dish} = props
-    document.title = dish.name
+    const {dish, isLoading} = props
+    document.title = dish && dish.name
     const comments = dish && dish.comments.map(comment => {
         return (
             <div className=' py-4 pl-2 border-bottom shadow-sm border-info' key={comment.id}>
@@ -66,8 +67,9 @@ function ItemDetail(props) {
                 </div>
             </div>
         </div>
-    ) : <Redirect to={'/page-not-found/404/'+props.match.params.id}/>
+    ) : <Redirect to={'/page-not-found/404/' + props.match.params.id} />
 }
+
 
 const mapStateToProps = (state, ownProps) =>{
     
@@ -77,7 +79,8 @@ const mapStateToProps = (state, ownProps) =>{
         return dish.id == id
     })
     return {
-        dish: dish[0] 
+        dish: dish[0], 
+        isLoading: state.dishes.isLoading
     }
 }
 
